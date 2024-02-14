@@ -2,6 +2,7 @@ import './App.css'
 import FeatureCard from './components/featureCard/FeatureCard'
 import Hero from './components/hero/Hero'
 import Navbar from './components/navbar/Navbar'
+import PortFolio from './components/portfolio/PortFolio'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         <div className='container mx-auto max-w-[1340px]'>
           <Navbar />
           <Hero />
+         
         </div>
       </section>
 
@@ -20,6 +22,9 @@ function App() {
         </div>
       </section>
 
+      <section className='bg-[#f8f9fc] dark:bg-[#101010] pb-10 '>
+          <PortFolio />
+      </section>
     </>
   )
 }
