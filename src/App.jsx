@@ -3,6 +3,10 @@ import FeatureCard from './components/featureCard/FeatureCard'
 import Hero from './components/hero/Hero'
 import Navbar from './components/navbar/Navbar'
 import PortFolio from './components/portfolio/PortFolio'
+import Facts from './components/facts/Facts'
+import Team from './components/team/Team'
+import Customer from './sustomergallery/Customer'
+import News from './news/News'
 
 function App() {
 
@@ -25,6 +29,24 @@ function App() {
       <section className='bg-[#f8f9fc] dark:bg-[#101010] pb-10 '>
           <PortFolio />
       </section>
+
+      <section className='bg-[#191919] '>
+          <Facts />
+      </section>
+
+      <section className='bg-[#f8f9fc] '>
+          <Team />
+      </section> 
+
+      <section className='bg-white ' id='Testimonials'>
+          <Customer />
+      </section> 
+
+      <section className='bg-[#f8f9fc]' id='News'>
+          <News />
+      </section>     
+       
+
     </>
   )
 }
