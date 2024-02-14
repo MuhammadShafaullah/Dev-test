@@ -7,6 +7,9 @@ import Facts from './components/facts/Facts'
 import Team from './components/team/Team'
 import Customer from './sustomergallery/Customer'
 import News from './news/News'
+import Brands from './brandlogo/Brands'
+import Footer from './footer/Footer'
+import Darkmod from './components/darkmood/Darkmod'
 
 function App() {
 
@@ -44,7 +47,19 @@ function App() {
 
       <section className='bg-[#f8f9fc]' id='News'>
           <News />
-      </section>     
+      </section>  
+
+      <section className='bg-[#fff]' id='Sponserd'>
+          <Brands />
+      </section> 
+
+      <section className='bg-[#1c1d23]' >
+          <Footer />
+      </section> 
+
+       <div className='fixed bottom-10'>
+          <Darkmod />
+        </div>         
        
 
     </>
