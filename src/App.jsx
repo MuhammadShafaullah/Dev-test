@@ -10,8 +10,16 @@ import News from './news/News'
 import Brands from './brandlogo/Brands'
 import Footer from './footer/Footer'
 import Darkmod from './components/darkmood/Darkmod'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react'
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
+
+  useEffect(() => {
+    AOS.init();
+    },[])
 
   return (
     <>
@@ -29,27 +37,27 @@ function App() {
         </div>
       </section>
 
-      <section className='bg-[#f8f9fc] dark:bg-[#101010] pb-10 '>
+      <section id='portfolio' className='bg-[#f8f9fc] dark:bg-[#101010] pb-10 '>
           <PortFolio />
       </section>
 
-      <section className='bg-[#191919] '>
+      <section id='facts' className='bg-[#191919] '>
           <Facts />
       </section>
 
-      <section className='bg-[#f8f9fc] '>
+      <section id='team' className='bg-[#f8f9fc] '>
           <Team />
       </section> 
 
-      <section className='bg-white ' id='Testimonials'>
+      <section id='customer' className='bg-white ' >
           <Customer />
       </section> 
 
-      <section className='bg-[#f8f9fc]' id='News'>
+      <section id='news' className='bg-[#f8f9fc]' >
           <News />
       </section>  
 
-      <section className='bg-[#fff]' id='Sponserd'>
+      <section id='brands' className='bg-[#fff]' >
           <Brands />
       </section> 
 
@@ -61,7 +69,7 @@ function App() {
           <Darkmod />
         </div>         
        
-
+        <ScrollToTop smooth />
     </>
   )
 }
